@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  font-family: cursive;
+}
+
+/* Top UI bar */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header button {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: medium;
+}
+
+header button:hover {
+  background-color: #ff1a1a;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.add-btn {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.add-btn:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #ff1a1a;
+}
