@@ -1,18 +1,22 @@
 // Load todos from localStorage
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
-
 const todoList = document.getElementById("todoList");
 
 function renderTodos() {
   todoList.innerHTML = "";
   todos.forEach((todo, index) => {
     const li = document.createElement("li");
-    li.textContent = todo;
+    li.className = "todo-item";
+
+    const span = document.createElement("span");
+    span.textContent = todo;
 
     const delBtn = document.createElement("button");
     delBtn.textContent = "Delete";
+    delBtn.className = "delete-btn";
     delBtn.onclick = () => deleteTodo(index);
 
+    li.appendChild(span);
     li.appendChild(delBtn);
     todoList.appendChild(li);
   });
@@ -38,8 +42,6 @@ function deleteTodo(index) {
 }
 
 function logout() {
-  // Optional: clear todos on logout if you want
-  // localStorage.removeItem('todos');
   window.location.href = "signup.html";
 }
 
